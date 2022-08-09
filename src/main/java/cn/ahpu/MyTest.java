@@ -2,7 +2,10 @@ package cn.ahpu;
 
 import org.junit.Test;
 import org.omg.CORBA.PUBLIC_MEMBER;
+import sun.net.idn.Punycode;
 
+import javax.print.DocFlavor;
+import javax.sound.midi.Soundbank;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -21,13 +24,13 @@ public class MyTest {
         String input = null;
 
         Pattern pattern = Pattern.compile(regex);
-        int rowNum=0;
+        int rowNum = 0;
         BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\X10ti-S\\Desktop\\新建文本文档.txt"));
-        while ((input=br.readLine())!=null){
+        while ((input = br.readLine()) != null) {
             Matcher matcher = pattern.matcher(input);
-            System.out.print("行"+(++rowNum)+"单词：");
-            while (matcher.find()){
-                System.out.print(matcher.group(0)+" ");
+            System.out.print("行" + (++rowNum) + "单词：");
+            while (matcher.find()) {
+                System.out.print(matcher.group(0) + " ");
             }
             System.out.println();
         }
@@ -52,6 +55,24 @@ public class MyTest {
     public void test04(){
         Pattern.compile();//不能使用
     }*/
+
+
+    @Test
+    public void test01() {
+        int x = Integer.MAX_VALUE - 3;
+        String s = Integer.toBinaryString(x);
+        System.out.println(s + "长度:" + s.length());
+
+        System.out.println(Integer.toString(100, 8));
+        System.out.println(Integer.toString(100, 2));
+        System.out.println(Integer.toString(100, 16));
+
+        System.out.println((-2)>>30);//负数有符号位 缺位补1
+        System.out.println((-2)>>>30);//无符号为 缺位补0
+        System.out.println(new Integer(4<<3) instanceof Integer);//32   4二进制左移3位 4*8
+        System.out.println(Runtime.getRuntime().availableProcessors());
+    }
+
 
 
 }

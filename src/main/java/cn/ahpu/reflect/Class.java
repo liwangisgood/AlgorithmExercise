@@ -1,15 +1,12 @@
 package cn.ahpu.reflect;
 
+import cn.ahpu.reflect.reflectcat.entity.Student;
 import org.junit.Test;
 
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.lang.*;
 import java.lang.reflect.Field;
-import java.net.URL;
-import java.nio.charset.StandardCharsets;
-import java.util.Objects;
 import java.util.Properties;
 
 /**

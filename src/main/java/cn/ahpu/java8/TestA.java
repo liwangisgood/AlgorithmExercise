@@ -1,5 +1,6 @@
 package cn.ahpu.java8;
 
+import cn.ahpu.java8.stream.Util;
 import org.junit.jupiter.api.Test;
 
 import java.text.Collator;
@@ -70,7 +71,7 @@ class TestA {
  @Test
     public void test04() {
 
-        ArrayList<Student> list=Util.MyListStudents();
+        ArrayList<Student> list= Util.MyListStudents();
 //        list.sort((s1, s2) -> s1.getName().equals(s2.getName()) ? s1.getAge() - s2.getAge() : s1.getName().compareTo(s2.getName()));
         list.sort((s1,s2)->{
             if (s1.getName().equals(s2.getName())){
