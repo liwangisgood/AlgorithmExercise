@@ -1,18 +1,24 @@
 package cn.ahpu;
 
-import static org.junit.Assert.assertTrue;
-
 import org.junit.Test;
 
+import javax.annotation.Resource;
 import java.util.Date;
+
+import static org.junit.Assert.assertTrue;
 
 /**
  * Unit test for simple App.
  */
+
 public class AppTest {
     /**
      * Rigorous Test :-)
      */
+
+   @Resource
+    private MyTest myTest;
+
     @Test
     public void shouldAnswerWithTrue() {
         assertTrue(true);
@@ -37,7 +43,9 @@ public class AppTest {
 
         System.out.println(date.getTime());//1650730098987
         //spring:session:expirations:        1650731280000
-
-
+        System.out.println("------------------");
+//        ClassPathXmlApplicationContext ac = new ClassPathXmlApplicationContext("application.xml");
+//        MyTest myTest =(MyTest) ac.getBean("myTest");
+        myTest.test01();
     }
 }

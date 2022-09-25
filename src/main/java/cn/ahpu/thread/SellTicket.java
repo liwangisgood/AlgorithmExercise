@@ -29,7 +29,6 @@ public class SellTicket {
 		}
 		System.out.println("main over");
 
-
 	}
 }
 

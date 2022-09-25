@@ -1,6 +1,6 @@
 package cn.ahpu.java8.stream;
 
-import cn.ahpu.java8.Student;
+import cn.ahpu.java8.entity.Student;
 
 import java.util.ArrayList;
 import java.util.Arrays;

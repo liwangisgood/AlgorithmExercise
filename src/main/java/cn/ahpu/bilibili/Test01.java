@@ -3,7 +3,8 @@ package cn.ahpu.bilibili;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -17,8 +18,7 @@ import java.util.Comparator;
  */
 
 //https://www.bilibili.com/video/BV1Dq4y1C7Ar/?spm_id_from=pageDriver
-
-	//
+@Component
 public class Test01 {
 	public static void main(String[] args) {
 		ArrayList<Student> list = new ArrayList<>();

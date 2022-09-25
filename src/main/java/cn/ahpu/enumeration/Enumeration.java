@@ -1,7 +1,10 @@
 package cn.ahpu.enumeration;
 
-import org.junit.Test;
 
+import org.junit.jupiter.api.Test;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Enumeration {
     public static void main(String[] args) {
 

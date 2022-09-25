@@ -1,5 +1,7 @@
 package cn.ahpu.hero;
 
+import org.springframework.stereotype.Component;
+
 import java.util.Arrays;
 
 /**
@@ -12,6 +14,7 @@ import java.util.Arrays;
  *
  * maxMul01(nums)数组中元素两两相乘的元素 构成一个新数组 然后排序 最大值就是目标值
  */
+@Component
 public class 数组中两元素的最大乘积 {
 	public static void main(String[] args) {
 

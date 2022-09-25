@@ -2,6 +2,7 @@ package cn.ahpu.designpattern;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import org.springframework.stereotype.Component;
 
 /**
  * @author:liwang
@@ -10,7 +11,7 @@ import lombok.Data;
  * @Algorithm Design：TODO
  * https://www.runoob.com/design-pattern/singleton-pattern.html
  */
-
+@Component
 public class SingleTon {
 
 	public static void main(String[] args) {

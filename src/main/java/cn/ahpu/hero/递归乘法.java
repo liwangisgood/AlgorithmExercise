@@ -1,5 +1,7 @@
 package cn.ahpu.hero;
 
+import org.springframework.stereotype.Component;
+
 /**
  * @author:liwang
  * @date: 2022/3/2 22:02
@@ -9,6 +11,7 @@ package cn.ahpu.hero;
  * 俄罗斯农夫算法
  * https://blog.csdn.net/CQ8587/article/details/489190
  */
+@Component
 public class 递归乘法 {
 
 	public static void main(String[] args) {

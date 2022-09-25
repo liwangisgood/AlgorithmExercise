@@ -1,5 +1,7 @@
 package cn.ahpu.designpattern;
 
+import org.springframework.stereotype.Component;
+
 /**
  * @author:liwang
  * @date: 2022/4/1 20:13
@@ -12,7 +14,7 @@ package cn.ahpu.designpattern;
  * 1.一个接口 2.众多实现类 3.工厂类创建 4.main方法中调用工厂类方法获取对象
  */
 
-
+@Component
 public class factory {
 	public static void main(String[] args) {
 		ShapeFactory shapeFactory = new ShapeFactory();

@@ -1,10 +1,11 @@
 package cn.ahpu.enumeration;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.springframework.stereotype.Component;
 
 import java.util.Enumeration;
 import java.util.Vector;
-
+@Component
 public class TestEnumeration{
     public static void main(String[] args){
         Vector v = new Vector();

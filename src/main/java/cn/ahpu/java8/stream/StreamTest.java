@@ -1,6 +1,6 @@
 package cn.ahpu.java8.stream;
 
-import cn.ahpu.java8.Student;
+import cn.ahpu.java8.entity.Student;
 import org.junit.Test;
 
 import java.util.*;
@@ -21,7 +21,7 @@ public class StreamTest {
 //                .sorted((x, y) -> y - x)
 //                .collect(Collectors.toList());
 //        squaresList.forEach(System.out::println);
-        //            num++;
+//            num++;
         squaresList.forEach(System.out::println);
 
         List<String> strList = Arrays.asList("a", "ba", "bb", "abc", "cbb", "bba", "cab");
@@ -56,7 +56,7 @@ public class StreamTest {
 
     /**
      * Stream流操作 filter limit skip  distinct
-     * 筛选与切片 filter skip limit distinct
+     * 筛选与切片 filter过滤 skip跳过 limit限数 distinct去重
      * map flatmap对流的处理
      * map对每个流单独处理 flatmap对获取的流进行整合
      * add addAll添加元素 集合

@@ -1,5 +1,8 @@
 package cn.ahpu.enumeration;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Eum01 {
 
 

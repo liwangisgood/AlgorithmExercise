@@ -1,6 +1,6 @@
 package cn.ahpu.reflect;
 
-import cn.ahpu.reflect.reflectcat.entity.Student;
+import cn.ahpu.reflect.reflect.entity.Student;
 import org.junit.Test;
 
 import java.io.FileReader;
@@ -97,7 +97,7 @@ public class Class {
 	public void test03() throws InstantiationException, IllegalAccessException,NullPointerException {//在外面访问私有属性 导致非法访问异常
 		java.lang.Class<Student> studentClass = Student.class;
 		Student student = studentClass.newInstance();
-
+		System.out.println("---------------------");
 		Field name = null;
 		try {
 			name = studentClass.getDeclaredField("name");
@@ -116,7 +116,9 @@ public class Class {
 	public void test04(){
 		String str=String.class.getSimpleName();
 		String str1=String.class.getName();
-		System.out.println(str+" "+str1);//String java.lang.String
+		String typeName = String.class.getTypeName();
+		String canonicalName = String.class.getCanonicalName();
+		System.out.println(str+" "+str1+" "+typeName+" "+canonicalName);//String java.lang.String
 	}
 
 	@Test
@@ -124,6 +126,8 @@ public class Class {
 		Object obj="";
 		//没有new 字符串存储在常量池中 obj 与空字符串 位置不同调用的函数不同
 		System.out.println(obj.equals(""));//
+		System.out.println("dwiueb:"+obj.toString()+" "+"".toString());
+		System.out.println("dwiueb:"+obj.hashCode()+" "+"".hashCode());
 		System.out.println(obj=="");//比较的是值 也可以是对象的地址(如果有对象的话)
 	}
 
