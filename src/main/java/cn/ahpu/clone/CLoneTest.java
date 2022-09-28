@@ -33,8 +33,6 @@ public class CLoneTest {
 @NoArgsConstructor
 @AllArgsConstructor
 class Person implements Cloneable{
-    private Integer age;
-    private String name;
 
     //本质上就是clone内引用成员引用类型不一样 而各自引用的数据是一样的 从而实现深克隆
     @Override
@@ -45,4 +43,9 @@ class Person implements Cloneable{
         return p1;
 
     }
+
+    private Integer age;
+    private String name;
+
+
 }

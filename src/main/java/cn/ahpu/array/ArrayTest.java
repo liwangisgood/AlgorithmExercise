@@ -13,7 +13,7 @@ public class ArrayTest {
     public void test01(){
         int[] array1={3,2,1,6,5,8,7};
         int[] array2=new int[array1.length-1];
-        System.arraycopy(array)
+//        System.arraycopy(array1);
     }
 
 }

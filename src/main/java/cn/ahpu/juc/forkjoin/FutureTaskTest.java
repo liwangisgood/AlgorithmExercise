@@ -2,7 +2,7 @@ package cn.ahpu.juc.forkjoin;
 
 import java.util.concurrent.*;
 
-public class FutureTaskTest {
+class FutureTaskTest {
     public static void main(String[] args) {
         String result=null;
         ExecutorService executor= Executors.newSingleThreadExecutor();

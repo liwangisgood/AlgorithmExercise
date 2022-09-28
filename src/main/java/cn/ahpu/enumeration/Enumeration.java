@@ -10,16 +10,18 @@ public class Enumeration {
 
     }
 
+    //枚举元素的遍历 枚举元素的访问
     @Test
     public void test01() {
-        System.out.println(Color.BLUE);
+        System.out.println(Color.BLUE) ;//返回为枚举类型 非字符串
         Color[] values = Color.values();
         for (Color value : values) {
-            System.out.print(value + " ");
+            System.out.println(value.name() + " "+value.toString()+" "+value.ordinal()+" "+value.hashCode()+" "+value.getClass()+" "+value.getDeclaringClass());
         }
         System.out.println(Color.valueOf("RED"));//不是会抛出异常
     }
 
+    //枚举类中设置静态方法 根据输入索引获取对应枚举名称或索引
     @Test
     public void test02() {
         System.out.println(Shape.Triangle.getShapeName());

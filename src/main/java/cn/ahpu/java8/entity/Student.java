@@ -3,16 +3,21 @@ package cn.ahpu.java8.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.Value;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class Student {
 
-    private String name;
-    private Integer age;
-    private Double salary;
-    private Status status;
+    public static void main(String[] args) {
+        Student student = new Student("李旺", 23);
+    }
+
+    private  String name;
+    private  Integer age;
+    private  Double salary;
+    private  Status status;
 
     public Student(String name, Integer age) {
         this.name=name;
